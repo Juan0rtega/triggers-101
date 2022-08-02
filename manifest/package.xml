@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>*</members>
-		<name>ApexClass</name>
+		<members>Account.Active_Contacts__c</members>
+		<members>Account.user_favorite_color__c</members>
+		<members>Contact.Status__c</members>
+		<members>User.Favorite_Color__c</members>
+		<name>CustomField</name>
 	</types>
 	<version>53.0</version>
 </Package>

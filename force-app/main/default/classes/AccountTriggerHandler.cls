@@ -1,15 +1,15 @@
-public with sharing class AccountTriggerHandler extends triggerHandler {
+public with sharing class AccountTriggerHandler extends TriggerHandler {
 
-    private override void beforeInsert(){
-        //logic here
-        System.debug('before Insert');
+    public override void beforeInsert(){
+        System.debug('Before Insert');
 
-        
-
+        for(Account acc : (List<Account>) Trigger.new){
+            acc.Name = 'Trigger override ' + acc.Name;
+        }
     }
 
-    private override void afterInsert(){
-        //logic here
-        System.debug('after Insert');
+    public override void afterInsert(){
+
+
     }
 }
