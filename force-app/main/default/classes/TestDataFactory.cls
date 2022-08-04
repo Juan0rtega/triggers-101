@@ -1,11 +1,12 @@
 @isTest
 public with sharing class TestDataFactory {
+
     public static List<Account> createAccounts(Integer accountsToCreate){
         List<Account> accList = new List<Account>();
 
-        for(Integer i; i >= accountsToCreate; i++){
+        for(Integer i=0; i <accountsToCreate; i++){
             accList.add(
-                createAccount('testName ' + i)
+                createAccount('testName' + i)
                 );
         }
 

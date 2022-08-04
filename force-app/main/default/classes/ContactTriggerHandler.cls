@@ -9,9 +9,9 @@ public with sharing class ContactTriggerHandler extends TriggerHandler{
             if(ct.status__c == 'Active'){
                 accountIds.add(ct.accountId);
             }
-
-            updateActiveContacts(accountIds);
         }
+        updateActiveContacts(accountIds);
+
     }
 
     public override void afterUpdate(){
